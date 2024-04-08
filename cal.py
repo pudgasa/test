@@ -1,6 +1,10 @@
+def cal(express):
+    result = str(round(eval(express)))
+    return result
 
 
 list_operation = ['+', '-', '*', '/']
+
 while True:
     express = input('Введите выражение: ')
     list_express = express.split()
@@ -16,4 +20,4 @@ while True:
     else:
         raise Exception('Формат математической операции не удовлетворяет заданию')
 
-    print(round(eval(express)))
+    print(cal(express))
