@@ -1,3 +1,6 @@
+import math
+
+
 def cal(express):
     list_express = express.split()
     if len(list_express) == 3:
@@ -11,8 +14,8 @@ def cal(express):
             raise Exception('Формат математической операции не удовлетворяет заданию')
     else:
         raise Exception('Формат математической операции не удовлетворяет заданию')
+    result = str(math.trunc(eval(express)))
 
-    result = str(round(eval(express)))
     return result
 
 
